@@ -1,29 +1,24 @@
 package day02.numbers;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PerfectNumbersTest {
 
-    public PerfectNumbers numbers;
-    public PerfectNumbersMain numbersMain;
-
-
-    @BeforeEach
-    void init() {
-        numbers = new PerfectNumbers();
-        numbersMain = new PerfectNumbersMain();
-    }
+    PerfectNumbers numbers = new PerfectNumbers();
 
     @Test
     void testEqual() {
-        int number = 6;
-        int number2 = 9;
-        assertEquals(true, numbers.isPerfectNumber(number));
-        assertNotEquals(true, numbers.isPerfectNumber(number2));
+        PerfectNumbers numbers = new PerfectNumbers();
+
+        boolean result = numbers.isPerfectNumber(6);
+        assertTrue(numbers.isPerfectNumber(8128));
+        assertTrue(numbers.isPerfectNumber(8128));
+        assertFalse(numbers.isPerfectNumber(4));
+        assertFalse(numbers.isPerfectNumber(4));
     }
+
 
     @Test
     void testNull() {
@@ -31,19 +26,5 @@ public class PerfectNumbersTest {
 
         assertNotNull(numbers);
         assertNull(anotherNumbers);
-    }
-
-    @Test
-    void testSameObjects() {
-        PerfectNumbers anotherNumbers = numbers;
-
-        assertSame(numbers, anotherNumbers);
-    }
-
-    @Test
-    void testNotSameObjects() {
-        PerfectNumbers anotherNumbers = new PerfectNumbers();
-
-        assertNotSame(numbers, anotherNumbers);
     }
 }
