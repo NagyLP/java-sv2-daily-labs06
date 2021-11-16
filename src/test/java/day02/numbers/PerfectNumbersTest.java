@@ -20,8 +20,9 @@ public class PerfectNumbersTest {
     @Test
     void testEqual() {
         int number = 6;
-        assertEquals("6", numbers.isPerfectNumber(number));
-        assertNotEquals("9", numbers.isPerfectNumber(number));
+        int number2 = 9;
+        assertEquals(true, numbers.isPerfectNumber(number));
+        assertNotEquals(true, numbers.isPerfectNumber(number2));
     }
 
     @Test

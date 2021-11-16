@@ -1,9 +1,5 @@
 package day02.cars;
 
-import cars.Car;
-import cars.CarShop;
-import cars.Color;
-
 public class CarShopMain {
 
     public static void main(String[] args) {
