@@ -36,17 +36,6 @@ public class HangmanMain {
         } else {
             System.out.println("Vesztettél.");
         }
-
-//        String guess =
-//            do {
-//            System.out.println("Itt tartasz: " +wordFound);
-//            System.out.println("Ennyi tipp: " +chances);
-//            System.out.println("Mi a következő tipped?");
-//
-//
-//
-//        }
-
     }
 
     private String updateWordFound(String wordToFind, String status, String guess) {
