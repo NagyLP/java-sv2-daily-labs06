@@ -23,8 +23,10 @@ public class HangmanMain {
             String guess = scanner.next();
 
             if (wordToFind.contains(guess)) {
+                System.out.println("Jó!");
                 wordFound = updateWordFound(wordToFind, wordFound, guess);
             } else {
+                System.out.println("Rossz!");
                 chances--;
             }
 
